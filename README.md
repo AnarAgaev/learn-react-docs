@@ -1,2 +1,1 @@
-# push.service
-Video reviews app
+Repository for save examples at the React learning process.
