@@ -1,0 +1,15 @@
+.product-list {
+    &__items {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__title {
+        margin-bottom: 10px !important;
+        font-weight: 700;
+        opacity: 0.9;
+    }
+}

@@ -1,0 +1,130 @@
+.product-list {
+
+    h2 {
+        margin: 0 0 12px;
+        padding: 0;
+    }
+
+    h3 {
+        margin: 3px 0 -3px;
+        padding: 0;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        border-radius: 4px;
+        background-color: #f7f7f7;
+        color: darkolivegreen;
+
+        &_filter {
+            width: 100%;
+        }
+
+        &_add {
+            width: calc(50% - 10px);
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            position: relative;
+            cursor: pointer;
+            color: inherit;
+        }
+
+        span {
+            color: inherit;
+
+            &:first-child {
+                max-width: 50px;
+                flex: 1 0 auto;
+            }
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 7px 5px;
+            background-color: darkolivegreen;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            text-transform: uppercase;
+            cursor: pointer;
+            opacity: 0.9;
+            transition: opacity .1s linear;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        & > div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+    }
+
+    &__input {
+        height: 26px;
+        border: 1px solid darkolivegreen;
+        border-radius: 4px;
+        padding: 0 8px;
+        font-size: 17px;
+
+        &_number {
+            width: 100px;
+        }
+    }
+
+    &__controller {
+        input + span {
+            display: inline-block;
+            position: relative;
+            width: 14px;
+            height: 14px;
+            border: 1px solid darkolivegreen;
+            border-radius: 50%;
+            background-color: white;
+            top: -1px;
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 8px;
+                height: 8px;
+                background-color: darkolivegreen;
+                border-radius: 50%;
+                opacity: 0;
+            }
+        }
+
+        input {
+            display: block;
+            position: absolute;
+            width: 1px;
+            height: 10px;
+            top: -1px;
+            left: -1px;
+            opacity: 0;
+
+            &:checked + span::before {
+                opacity: 1;
+            }
+        }
+    }
+}

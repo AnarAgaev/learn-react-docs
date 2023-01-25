@@ -1,0 +1,22 @@
+.product-list {
+    &__results {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: calc(50% - 10px);
+        padding: 20px;
+        border-radius: 4px;
+        background-color: #f7f7f7;
+    }
+
+    &__caption {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        color: darkolivegreen;
+
+        span:first-child {
+            width: 60%;
+        }
+    }
+}
