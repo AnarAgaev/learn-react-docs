@@ -7,13 +7,13 @@ const LangContext = React.createContext();
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  // <React.StrictMode>
-    // <Suspense fallback={<div>Loading...</div>}>
-      // <LangContext.Provider value={'ru'}>
+  <React.StrictMode>
+    <Suspense fallback={<div>Loading...</div>}>
+      <LangContext.Provider value={'ru'}>
         <App />
-      // </LangContext.Provider>
-    // </Suspense>
-  // </React.StrictMode>
+      </LangContext.Provider>
+    </Suspense>
+  </React.StrictMode>
 );
 
 export { LangContext };
