@@ -1,0 +1,18 @@
+.subtitleWrap {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+
+    button {
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+}

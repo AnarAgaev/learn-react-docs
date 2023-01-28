@@ -4,6 +4,8 @@ import SearchBar from './Components/SearchBar';
 import AddProduct from './Containers/AddProduct';
 import ProductTable from './Components/ProductTable';
 import Stock from './Components/Stock';
+import RefComponent from './Components/RefComponent';
+import FuncRefComponent from './Components/FuncRefComponent';
 
 import UsedLang from './Containers/UsedLang';
 import ErrorAction from './Containers/ErrorAction';
@@ -86,6 +88,10 @@ export default class App extends React.Component {
   render() {
     return (
       <Stock>
+        <RefComponent someProp={'Somr prop'}/>
+
+        <FuncRefComponent someProp={'Some prop'} />
+
         <ErrorBoundary>
           <ErrorAction error={this.state.error} handleError={this.handleError} />
         </ErrorBoundary>
